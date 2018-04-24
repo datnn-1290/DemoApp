@@ -30,4 +30,32 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  app_name: "Demo app"
+  base_title: "Ruby on Rails Tutorial Sample App"
+  btn_signup: "Sign up now!"
+  login: "Log in"
+  tutorial_name: "Ruby on Rails Tutorial"
+  static_pages:
+    home:
+      welcome: "Welcome to the Demo App"
+      btn_signup: "Sign up now!"
+  layouts:
+    footer:
+      asd: ""
+    header:
+      home: "Home"
+      help: "Help"
+      login: "Log in"
+  users:
+    index:
+      listing_users: "Listing users"
+      name: "Name"
+      email: "Email"
+      show: "Show"
+      edit: "Edit"
+      destroy: "Destroy"
+      confirm: "Are you sure?"
+      new_user: "New User"
+    new:
+      new_user: "New user?"
+    show:
