@@ -31,10 +31,10 @@
 
 en:
   app_name: "Demo app"
-  base_title: "Ruby on Rails Tutorial Sample App"
+  base_title: "Demo App"
   btn_signup: "Sign up now!"
   login: "Log in"
-  tutorial_name: "Ruby on Rails Tutorial"
+  tutorial_name: "Demo App"
   static_pages:
     home:
       welcome: "Welcome to the Demo App"
