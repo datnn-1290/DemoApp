@@ -1,4 +1,6 @@
 class User < ApplicationRecord
+  has_many :entries
+  default_scope -> {order(created_at: :desc)}
   attr_accessor :remember_token
   before_save{email.downcase!}
   validates :name, presence: true, length: {maximum: 50}
@@ -12,6 +14,10 @@ class User < ApplicationRecord
     cost = BCrypt::Engine.cost
     cost = BCrypt::Engine::MIN_COST if ActiveModel::SecurePassword.min_cost
     BCrypt::Password.create(string, cost: cost)
+  end
+
+  def feed
+    Entry.where("user_id = ?", id)
   end
 
   def self.new_token
