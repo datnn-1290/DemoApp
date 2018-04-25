@@ -1,12 +1,13 @@
-@import 'bootstrap-sprockets';
-@import 'bootstrap';
-@import 'custom_variables';
+@import "bootstrap-sprockets";
+@import "bootstrap";
 
 @mixin box_sizing {
   -moz-box-sizing:    border-box;
   -webkit-box-sizing: border-box;
   box-sizing:         border-box;
 }
+
+$gray-medium-light: #eaeaea;
 
 /* universal */
 
@@ -27,6 +28,11 @@ textarea {
   h1 {
     margin-bottom: 10px;
   }
+}
+
+.title{
+  color: red;
+  font-weight: bold;
 }
 
 /* typography */
@@ -147,8 +153,6 @@ section .section-title {
     margin-bottom: 10px;
 }
 }
-
-
 
 /* forms */
 

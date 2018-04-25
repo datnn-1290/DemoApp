@@ -1,4 +1,4 @@
-<% if @feed_items.any? %>
+<% unless @feed_items.nil? %>
   <ol class="microposts">
     <%= render @feed_items %>
   </ol>

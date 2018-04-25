@@ -35,6 +35,7 @@ en:
   btn_signup: "Sign up now!"
   login: "Log in"
   tutorial_name: "Demo App"
+  help: "Help"
   static_pages:
     home:
       welcome: "Welcome to the Demo App"

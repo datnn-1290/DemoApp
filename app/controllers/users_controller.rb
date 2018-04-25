@@ -4,12 +4,13 @@ class UsersController < ApplicationController
   before_action :admin_user, only: :destroy
 
   def index
-    @users = User.paginate(page: params[:page], per_page: 30)
+    @users = User.paginate(page: params[:page], per_page: 3)
   end
 
   def show
     @user = User.find params[:id]
-    @entries = @user.entries.paginate(page: params[:page])
+    @entries = @user.entries.paginate(page: params[:page], per_page: 3)
+    @comment = @user.comments.build
   end
 
   def new
@@ -34,7 +35,7 @@ class UsersController < ApplicationController
       flash[:success] = "Profile updated"
       redirect_to @user
     else
-      render 'edit'
+      render "edit"
     end
   end
 
