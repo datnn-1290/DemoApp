@@ -1,0 +1,8 @@
+<% unless @feed_items.nil? %>
+  <ol class="microposts">
+    <%= render @feed_items %>
+  </ol>
+  <%= will_paginate @feed_items %>
+<% else %>
+  <h3>Let's post something!</h3>
+<% end %>
